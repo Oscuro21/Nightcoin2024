@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NightCoin</title>
+    <link rel="icon" href="logo1.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .left-panel, .right-panel {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            margin: 0 1%;
+        }
+        .left-panel {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('1.jfif');
+        }
+        .right-panel {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('2.jfif');
+        }
+        .text-background {
+            flex: 1;
+            padding: 1%;
+            margin: 0 0.1%;
+            background-color: rgba(98, 91, 95, 0.1);
+            background-image: url('fondo3.png');
+            text-align: center;
+        }
+        .container-content {
+            max-width: 100%;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            margin-bottom: 5%;
+        }
+        .highlight {
+            color: #ff9900;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 35%;
+        }
+        .snow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1000;
+        }
+        .flake {
+            position: absolute;
+            width: 0.5%;
+            height: 1%;
+            background-color: #ffffff;
+            border-radius: 50%;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(-0.5%);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+                               
+        .strikethrough {
+            text-decoration: line-through;
+        }
+	
+        .rights {
+            position: absolute;
+            bottom: 0%;
+            width: 100%;
+            text-align: center;
+ 	    font-size: 1.3vh;
+        }
+
+	.custom-text {
+	font-size: 1.6vh;
+	}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel"></div>
+        <div class="text-background">
+            <div class="container-content">
+
+<div class="custom-text">		
+                <img src="logo1.png" alt="NightCoin Logo" class="logo">
+                <h1>NightCoin</h1>
+		<!-- Aquí se tacha el texto "Winter" y se reemplaza por "Halving is Coming" -->
+                <p><strong><span class="strikethrough">winter</span> Halving is Coming</strong></p>
+                <p>NightCoin, la criptomoneda meme que ilumina las noches oscuras del Internet con el poder de la diversión y la comunidad. NightCoin es una moneda digital diseñada para aquellos que disfrutan de la cultura de los memes y la creatividad sin límites.</p>
+                <p>En el vasto y misterioso reino del ciberespacio, NightCoin surge como una luz en la oscuridad, inspirada por el legendario Rey Nocturno de la aclamada serie Juego de Tronos.</p>
+                <p>NightCoin está construido sobre la robusta red blockchain de Solana, lo que garantiza transacciones rápidas y seguras para todos los miembros de nuestra comunidad.</p>
+                <p><strong>¡Únete a la comunidad de NightCoin hoy mismo y sé parte de esta emocionante aventura!</strong></p>
+                <p>Puedes obtener NightCoin en <a href="https://v3.dexlab.space/swap?pay=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&receive=51uGgobWBvsQYGKpSrps6hm8xPUojLzQDaPyjZryirw2">DexLab</a>
+		   , para más información <a href="nightcoin2024.html">about</a></p>
+</div>				
+            </div>
+        </div>
+        <div class="right-panel"></div>
+    </div>
+
+	<div class="rights">
+        © 2024 by Night. Todos los derechos reservados
+    </div>
+    <div class="snow"></div>          	
+    <script>        
+        function createSnowflakes() {
+            const numFlakes = 100;
+            const container = document.querySelector('.snow');
+            for (let i = 0; i < numFlakes; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('flake');
+                snowflake.style.left = `${Math.random() * 100}%`;
+                snowflake.style.top = `${Math.random() * -50}px`;
+                snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                snowflake.style.animationDelay = `${Math.random() * 2}s`;
+                container.appendChild(snowflake);
+            }
+        }
+        
+        window.addEventListener('load', createSnowflakes);        
+        let accumulatedScroll = 0;        
+        window.addEventListener('wheel', function(event) {            
+            if (event.deltaY > 0) {
+                
+                accumulatedScroll += Math.abs(event.deltaY);                                
+                if (accumulatedScroll >= 300) { 
+                    // Redireccionar a la página deseada
+                    window.location.href = "nightcoin2024.html";
+                    // Reiniciar el valor de desplazamiento acumulado
+                    accumulatedScroll = 0;
+                }
+            } else { 
+                
+                accumulatedScroll += Math.abs(event.deltaY);
+                                
+                if (accumulatedScroll >= 300) {                                       
+                    window.location.href = "nightcoin.html";                    
+                    accumulatedScroll = 0;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+

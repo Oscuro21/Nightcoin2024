@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NightCoin</title>
+    <link rel="icon" href="logo1.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .left-panels {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin: 2% 0% 1% 0%;
+        }
+        .left-panel {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            margin: 1% 1% 1% 3%;
+        }
+        .text-background {
+            flex: 1;            
+            margin: 2.5% 1% 1.5% 0.5%;
+            background-color: rgba(98, 91, 95, 0.1);
+            background-image: url('fondo3.png');	    
+            	    	    	    
+        }
+        .container-content {
+            max-width: 75%;
+            margin: 0 auto;	    		
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+	    text-align: center;
+            	                 
+        }
+        h1 {
+            text-align: center;	
+	               
+        }
+        p {
+            margin-bottom: 2.5%;
+	   	    	    
+        }
+        .highlight {
+            color: #ff9900;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 25%;
+        }
+        .snow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1000;
+        }
+        .flake {
+            position: absolute;
+            width: 0.5%;
+            height: 1%;
+            background-color: #ffffff;
+            border-radius: 50%;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(-0.5%);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+
+        
+        .strikethrough {
+            text-decoration: line-through;
+        }
+
+        
+        .left-panel:nth-child(1) {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('3.jfif');
+        }
+
+        .left-panel:nth-child(2) {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('4.jfif');
+        }
+
+        
+        .footer {
+            background-image: url('banner1.jfif');
+            background-size: cover;
+            background-position: center;
+            height: 10%; /* Altura del pie de página */
+            width: 49.2%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0% 0% 1.5% 49.8%;
+        }
+
+	
+        .rights {
+            position: absolute;
+            bottom: 0%;
+            width: 100%;
+            text-align: center;
+ 	    font-size: 1.3vh;
+        }
+        
+        .top-text {
+            position: absolute;
+            top: 2%; 
+            width: 100%;
+            text-align: center;
+            font-size: 2.6vh; 
+        }
+        
+        .top-text a {
+            color: #ffffff; 
+            margin: 0% 0.5%; 
+            text-decoration: none; 
+        }
+
+	 .custom-text {
+	    font-size: 1.6vh;
+            margin-bottom: 15%;              
+            height: 100vh;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panels">
+            <div class="left-panel"></div>
+            <div class="left-panel"></div>
+        </div>
+        <div class="text-background">
+            <div class="container-content">      
+                <img src="logo1.png" alt="NightCoin Logo" class="logo">
+
+<div class="custom-text">
+		
+                <h1>NightCoin</h1>
+		<h2>About</h2>
+		En un mundo donde otras monedas tiemblan ante la sombra del Rey de la Noche, Night Coin se burla en sus caras. ¡Es hora de abrazar la oscuridad y unirse a la revolución de Night Coin! El invierno ha llegado, dejando atrás las mil variaciones de las mismas monedas memes, y dando paso al verdadero rey.
+
+		<h2>Tokenomics</h2>
+		Night Coin opera sin impuestos y tiene un suministro total de 1 billón de tokens sobre la red de Solana, experimenta una nueva era de transacciones sin trabas ni complicaciones.
+
+		<h2>Obtener Night Coin:</h2>	
+  
+    Wallet: Descargue Phantom o su billetera de elección de la tienda de aplicaciones de Google de forma gratuita. Usuarios de escritorio pueden descargar la extensión para Google Chrome, Brave o Firefox.
+  
+    <p>Obtener USDC (Solana): Tenga USDC en su billetera para cambiar a Night Coin. Si no tiene ningún USDC, puede comprar directamente en su billetera, transferir desde otra billetera o comprar en otro intercambio y enviarlo a su billetera.</p>
+  
+    <p>Ir a Dexlab (<a href="https://v3.dexlab.space/swap">https://v3.dexlab.space/swap</a>): Una vez en el DEX elegido, conéctese al DEX y en el apartado de swap seleccione USDC por Night Coin, o simplemente haga clic <a href="https://v3.dexlab.space/swap">aquí</a>.</p>
+ 
+    <p>SWAP: Cambie USDC por Night Coin, rápido y sencillo además no tenemos impuestos.</p>
+ 
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"></div> 
+
+    <div class="rights">
+        © 2024 by Night. Todos los derechos reservados
+    </div>
+
+    <div class="snow"></div>
+
+    <!-- Texto en la parte superior -->
+    <div class="top-text">
+        <a href="nightcoin.html">Home</a>
+        <a href="https://v3.dexlab.space/swap?pay=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amp;receive=51uGgobWBvsQYGKpSrps6hm8xPUojLzQDaPyjZryirw2">Buy now</a>
+    </div>
+
+    <script>        
+        function createSnowflakes() {
+            const numFlakes = 100;
+            const container = document.querySelector('.snow');
+            for (let i = 0; i < numFlakes; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('flake');
+                snowflake.style.left = `${Math.random() * 100}%`;
+                snowflake.style.top = `${Math.random() * -50}px`;
+                snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                snowflake.style.animationDelay = `${Math.random() * 2}s`;
+                container.appendChild(snowflake);
+            }
+        }
+        
+        window.addEventListener('load', createSnowflakes);
+        
+        let accumulatedScroll = 0;
+        
+        window.addEventListener('wheel', function(event) {
+            
+            if (event.deltaY > 0) {
+                
+                accumulatedScroll += Math.abs(event.deltaY);
+                                
+                if (accumulatedScroll >= 300) { // Puedes ajustar este valor según tus preferencias
+                    
+                    window.location.href = "nightcoin2024.html";
+                    
+                    accumulatedScroll = 0;
+                }
+            } else { 
+                
+                accumulatedScroll += Math.abs(event.deltaY);
+                                
+                if (accumulatedScroll >= 300) { // Puedes ajustar este valor según tus preferencias
+                    
+                    window.location.href = "nightcoin.html";
+                    
+                    accumulatedScroll = 0;
+                }
+            }
+        });
+    </script>
+</body
