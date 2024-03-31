@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +5,8 @@
     <title>NightCoin</title>
     <link rel="icon" href="logo1.png" type="image/png">
     <style>
+	/* Estilos para pantallas de computadoras */
+	@media only screen and (min-width: 600px) {
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,21 +14,27 @@
             background-color: #000000;
             color: #ffffff;
             overflow: hidden;
+
+	.x {
+        display: none; 
+        }
+
+
         }
         .container {
             display: flex;
             height: 100vh;
         }
-        .left-panel, .right-panel {
+        .panelx, .panely {
             flex: 1;
             background-size: cover;
             background-position: center;
             margin: 0 1%;
         }
-        .left-panel {
+        .panelx {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('1.jfif');
         }
-        .right-panel {
+        .panely {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('2.jfif');
         }
         .text-background {
@@ -104,15 +111,131 @@
 	font-size: 1.6vh;
 	}
 
+}
+
+
+	/* Estilos para dispositivos móviles */
+        @media only screen and (max-width: 599px) {
+            
+           body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #000000;
+                color: #ffffff;
+                overflow: hidden;
+            }
+            .container {
+                display: flex;
+                height: 100vh;
+            }
+           
+           	 						
+            
+            .text-background {
+                  flex: 1;
+    	          padding: 1%;
+	          height: 70vh;
+    	          margin: 10% 0%; 0%; 0.1%
+    	          background-color: rgba(98, 91, 95, 0.1);                  
+                  text-align: center;             	    
+            }
+
+            .container-content {
+                 max-width: 90%;
+                 margin: 0 auto;
+		 height: 100%; 
+                 display: flex;
+                 flex-direction: column;
+                 text-align: center;
+		 background-color: rgba(98, 91, 95, 0.1);
+           
+            }
+            h1 {
+                text-align: center;  
+            }
+            p {
+                margin-bottom: 2vh;
+            }
+            .highlight {
+                color: #ff9900;
+            }
+            .logo {
+                display: block;
+                margin: 0 auto;
+                width: 18vh;
+            }
+            .snow {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                z-index: 1000;
+            }
+            .flake {
+                position: absolute;
+                width: 0.5%;
+                height: 1%;
+                background-color: #ffffff;
+                border-radius: 50%;
+                animation: fall linear infinite;
+            }
+            @keyframes fall {
+                0% {
+                    transform: translateY(-0.5%);
+                    opacity: 1;
+                }
+                100% {
+                    transform: translateY(100vh);
+                    opacity: 0;
+                }
+            }
+            .strikethrough {
+                text-decoration: line-through;
+            }
+            
+            
+            .rights {
+                position: absolute;
+                bottom: 0%;
+                width: 100%;
+                text-align: center;
+                font-size: 1vh;
+            }
+            
+            
+            .custom-text {
+                font-size: 1.5vh;
+                margin-bottom: 15%;              
+                height: 100vh;
+                width: 100%;
+            }
+		
+            .x {
+                display: block;
+                margin: 0 auto;
+                width: 10vh;
+	    }
+	                	
+                         	                                                                                              
+        }
+		
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="left-panel"></div>
-        <div class="text-background">
-            <div class="container-content">
 
-<div class="custom-text">		
+<div class="container">
+    
+    	                       <div class="panelx"></div>
+	
+     <div class="text-background">
+        <div class="container-content">
+
+                               <div class="custom-text">
+		
                 <img src="logo1.png" alt="NightCoin Logo" class="logo">
                 <h1>NightCoin</h1>
 		<!-- Aquí se tacha el texto "Winter" y se reemplaza por "Halving is Coming" -->
@@ -121,17 +244,25 @@
                 <p>En el vasto y misterioso reino del ciberespacio, NightCoin surge como una luz en la oscuridad, inspirada por el legendario Rey Nocturno de la aclamada serie Juego de Tronos.</p>
                 <p>NightCoin está construido sobre la robusta red blockchain de Solana, lo que garantiza transacciones rápidas y seguras para todos los miembros de nuestra comunidad.</p>
                 <p><strong>¡Únete a la comunidad de NightCoin hoy mismo y sé parte de esta emocionante aventura!</strong></p>
-                <p>Puedes obtener NightCoin en <a href="https://v3.dexlab.space/swap?pay=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&receive=51uGgobWBvsQYGKpSrps6hm8xPUojLzQDaPyjZryirw2">DexLab</a>
-		   , para más información <a href="nightcoin2024.html">about</a></p>
-</div>				
-            </div>
-        </div>
-        <div class="right-panel"></div>
+                <p>Puedes obtener NightCoin en <a href="https://v3.dexlab.space/swap?pay=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&receive=51uGgobWBvsQYGKpSrps6hm8xPUojLzQDaPyjZryirw2">DexLab</a></p>
+		<p>más información <a href="nightcoin2024.html">about</a></p>
+		<a href="https://twitter.com/NightCoin2024" target="_blank">
+		<img src="x2.png" alt="Comunidad" class="x">
+		</a>
+                               </div>	
+        </div>			
     </div>
+     
 
-	<div class="rights">
-        © 2024 by Night. Todos los derechos reservados
-    </div>
+                             <div class="panely"></div>
+</div>
+
+			   
+	
+	                   <div class="rights">
+                           © 2024 by Night. Todos los derechos reservados
+                           </div>
+
     <div class="snow"></div>          	
     <script>        
         function createSnowflakes() {
@@ -173,4 +304,3 @@
     </script>
 </body>
 </html>
-
